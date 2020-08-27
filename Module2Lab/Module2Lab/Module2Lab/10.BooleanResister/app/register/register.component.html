@@ -1,0 +1,12 @@
+<form ngForm>
+    <label>registerAllowed Boolean Property </label>
+    &nbsp;<select ngModel #boolean="ngModel"  name="option" >
+        <option>true</option>
+        <option>false</option>
+    </select>
+    <div >
+        <button *ngIf="boolean.value=='true'">register</button>
+        <button *ngIf="boolean.value=='false'">login</button>
+    </div>
+
+</form>

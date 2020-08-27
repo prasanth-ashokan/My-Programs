@@ -1,0 +1,36 @@
+<body>
+    <h1 style="width: 100%;margin-left: 2cm;"><b>Welcome to Calculator App!</b></h1>
+    <div style="width: 100%;">
+       <div style="float:left; width: 40%; margin-left: 2cm;">
+            <input type='text' name='a' [formControl]="a" size="50px">
+            <br>
+            <br>
+            <div style="width: 100%;">
+                <div>
+                    <div style="float:left; width: 40%;margin-left: 10mm;">
+                        <button class="btn btn-primary" (click)="Add()">Add</button> 
+                    </div>
+                    <div class="float:right; margin-right:10mm">
+                        <button class="btn btn-primary" (click)="Subtract()">Substract</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+    <div style="float:right;width: 50%;">
+        <input type='text' name='b' [formControl]="b" size="50px"> 
+        <br>
+        <br>           
+        <div style="width: 100%;margin-left: 10mm;">
+            <div>
+                <div style="float:left; width: 50%">
+                    <button class="btn btn-primary" (click)="Multiply()">Multiply</button> 
+                </div>
+                <div class="float:right;margin-right: 10mm;">
+                    <button class="btn btn-primary" (click)="Divide()">Divide</button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+<h3 style="margin-left:2cm;margin-top: 3cm;">Result={{result}}</h3>
+</body>

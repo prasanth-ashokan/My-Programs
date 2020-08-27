@@ -1,0 +1,21 @@
+<form>
+  <li>
+  <input type="radio" name="color" ngModel #r="ngModel" value="red"  for="defaultUnchecked">red 
+  </li>
+   <li>
+     <input type="radio" name="color" ngModel #r="ngModel" value="blue">blue
+  </li>
+  <li>
+     <input type="radio" name="color" ngModel #r="ngModel" value="cyan">cyan
+  </li>
+  <li>
+     <input type="radio" name="color" ngModel #r="ngModel" value="yellow">yellow
+  </li>
+  <li>
+     <input type="radio" name="color" ngModel #r="ngModel" value="violet">violet
+  </li>
+  <li>
+     <input type="radio" name="color" ngModel #r="ngModel" value="green">green
+  </li>
+</form>
+<p [style.color]=r.value>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, quisquam</p>

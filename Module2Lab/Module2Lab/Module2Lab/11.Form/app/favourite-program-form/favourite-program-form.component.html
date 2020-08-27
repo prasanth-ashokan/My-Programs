@@ -1,0 +1,32 @@
+
+    <label>
+        ROLLNO:
+    </label>
+    <input type="text"
+     name="ROLLNO" 
+     minlength="5" 
+     required
+     ngModel
+     #rollno="ngModel"
+     (click)="fun(rollno)"
+    ><br>
+    <div *ngIf="rollno.touched">
+        <div *ngIf="rollno.errors?.minlength" class="font" >minimum length is 5</div>
+        <div *ngIf="rollno.errors?.required" class="font" >
+            
+rollno is mandatory
+        </div>
+    </div>
+    <div>
+        <label>SELECT PROGRAMMING LANGUAGE</label>
+        
+ <li  *ngFor="let user of programs">
+        
+      <input type="checkbox" [(ngModel)]="user.checked" (ngModelChange)="changed(this)"/>
+      {{user.name}}
+    
+      </li>
+    
+     <div *ngIf="flag">select atleast two LANGUAGE</div>
+      </div>
+    

@@ -1,0 +1,21 @@
+<div class="container">
+    <form [formGroup]="userform">
+        <div>
+            <label>Username</label> &nbsp;
+            <input type="text"
+             formControlName="username"
+             name="username">
+            <div *ngIf="username.touched && !username.valid" class="danger">
+
+                <div *ngIf="username.errors?.cannotContainSpaceSymbol">Username cannot contain space symbols number.</div>
+            </div>
+        </div>
+        <div>
+            <label>Password</label> &nbsp;
+            <input type="text"
+            formControlName="password" 
+            name="password">
+        </div>
+        <input type="submit" value="Sign Up" (click)="fun()">
+    </form>
+</div>

@@ -1,0 +1,22 @@
+<h1>Using NgIf with Else</h1> 
+<br>
+<h3>Example-1:</h3>
+<br>
+<input type="radio" ngModel #c="ngModel" name="c" value="true">True
+<input ngModel #d="ngModel"type="radio" name="c" value="flase">False
+<div *ngIf="c.value">
+  <div *ngIf="!d.value">
+<b>Data is Valid </b>
+</div>
+</div>
+<div *ngIf="d.value=='flase'">
+<div *ngIf="c.value">
+<b>Data is invalid. </b></div></div>
+<br>
+<br>
+<h3>Example-2:</h3>
+<br>
+Enter Age:<input ngModel #a="ngModel" type="input" name="a" ><br>
+<br>
+<div *ngIf="a.value>18"><b>Eligible to vote. </b></div>
+<div *ngIf="a.value<=18"><b>Not Eligible.</b></div>
