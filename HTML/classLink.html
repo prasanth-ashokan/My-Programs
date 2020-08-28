@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<style>
+.color{
+    color: red;
+}
+table{
+  border: 1px solid black;
+}
+body{
+  background:rgb(26, 73, 160);
+}
+a{
+  color: black;
+}
+</style>
+<body align="center" style="margin-top:2cm;">
+    <P style="color:aqua;">PLACEMENT TRAINING CLASS LINK</P>
+    
+   <p class="color">09:30 AM TO 11:30 AM</p>
+    <a id="1"href="https://event.webinarjam.com/register/39/rp393avq">APTITUTE</a>
+    </tr>
+    <P class="color">11:45 AM TO 12:45 PM</P>
+    <a id="2" href="https://event.webinarjam.com/register/40/pw353sx9">AMCAT</a><br>
+    <P class="color">01:45 PM TO 03:15 PM</P>
+    <a id="3"href="https://event.webinarjam.com/register/22/40m5miw">AUTOMATA</a><br>
+    <p id=4" class="color">03:30 PM TO 04:30 PM</p>
+    <a href="https://event.webinarjam.com/register/41/mq545h7m">VERBAL</a>
+</body>
+<script>
+  var today=new Date();
+  var time=(today.getHours())%12
+  if(time==9){
+    document.getElementById("1").click();
+  }
+  if(time==11){
+    document.getElementById("2").click();
+  }
+  if(time==1){
+    document.getElementById("3").click();
+  }
+  if(time==3){
+    document.getElementById("4").click();
+  }
+  else{
+    alert("Log in correct time")
+  }
+</script>
